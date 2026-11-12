@@ -26,6 +26,8 @@ O SPEC original fica preservado em `docs/SPEC.md`. Este registro documenta decis
 - 2026-11-12 — Adicionar `@electric-sql/pglite` 0.5.16 apenas em desenvolvimento para testar SQL/grants/RLS no Postgres sem Docker; o contrato de Supabase Auth é fornecido pela suíte e não representa integração real com o provedor.
 - 2026-11-12 — Adicionar `server-only` 0.0.1 para proteger módulos de sessão. Login habilitado por `SONDA_AUTH_ENABLED`; owner local em `SONDA_OWNER_EMAIL`, sem versionar o valor.
 
+- 2026-11-12 — Adicionar `pnpm setup:check` para inspeção operacional somente leitura, sem valores de credenciais no relatório. Ele verifica pré-requisitos, provedores e seed/bootstrap quando há credencial administrativa local; hook, template e fluxos reais continuam exigindo validação própria. Contrato de settings confirmado no [código oficial do Supabase Auth](https://github.com/supabase/auth/blob/master/internal/api/settings.go).
+
 ## Pendências
 
 - Confirmar contas/projetos Supabase e Vercel, acesso a DNS/domínio e ambientes de preview/produção.

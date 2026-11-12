@@ -56,6 +56,20 @@ Usar `.env.example` como template. Nenhum segredo é necessário para os fluxos 
 
 ## Banco e bootstrap
 
+### Conferir a configuração
+
+```bash
+pnpm setup:check
+```
+
+O comando lê `.env.local` quando existe. Valida origens/chaves presentes, consulta configurações públicas do Auth e verifica a recusa de leitura anônima. Com service role e owner locais, consulta também os dois workspaces e convites iniciais. Não faz escrita, não envia e-mails e não imprime valores de chaves, URLs, e-mails ou respostas brutas do provedor. Requisições têm tempo limite e não seguem redirecionamentos.
+
+Códigos de saída: `0` para checks automáticos aprovados, `1` para configuração ausente/inválida ou check reprovado, `2` para verificações pendentes. `0` não significa aceite da milestone: hook, template, entrega de e-mail, OAuth e sessões reais ainda exigem evidência.
+
+A checagem administrativa exige service role apenas localmente; sua ausência deixa seed/bootstrap como pendentes. A aplicação hospedada continua sem precisar dessa chave nesta entrega.
+
+### Aplicar o banco
+
 As migrations e o seed estão em `supabase/`. Não executam automaticamente ao iniciar o Next.js. `pnpm test` valida a SQL em PGlite, sem persistir dados nem tocar um Supabase real. Seguir [ADR-0001](adr/0001-acesso-por-convite-e-isolamento.md) e [setup dos serviços](setup-services.md) para provisionar.
 
 O e-mail do owner fica em `SONDA_OWNER_EMAIL` local. O script `node --env-file=.env.local scripts/bootstrap-owner.mjs` só pode rodar após aplicar migrations/seed; ele não cria usuários e não imprime credenciais. A UI de convites usa a sessão comum e RPCs restritas.

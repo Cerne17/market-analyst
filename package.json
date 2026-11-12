@@ -16,7 +16,8 @@
     "typecheck": "next typegen && tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "setup:check": "node --env-file-if-exists=.env.local scripts/check-setup.mjs"
   },
   "dependencies": {
     "@fontsource/inter": "5.3.0",

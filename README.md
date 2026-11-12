@@ -45,3 +45,5 @@ pnpm test:e2e
 ```
 
 Os testes de navegador usam o build de produção, que deve existir antes da execução. O workflow de CI executa essa sequência. Chaves reais ficam em `.env.local` ou no serviço de hospedagem, nunca no Git.
+
+Para conferir a configuração externa, execute `pnpm setup:check`. O comando faz somente leituras, não exibe chaves e aponta provedores, seed e bootstrap pendentes. Ele não substitui a validação real de login, hook e permissões descrita no [guia de serviços](docs/setup-services.md).

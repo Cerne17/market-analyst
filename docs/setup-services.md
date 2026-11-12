@@ -2,6 +2,8 @@
 
 O código de acesso por convite está implementado. O aceite das issues [#2](https://github.com/Cerne17/market-analyst/issues/2) e [#3](https://github.com/Cerne17/market-analyst/issues/3) depende de um Supabase real. O login fica fechado enquanto `SONDA_AUTH_ENABLED` não for `true`.
 
+Use `pnpm setup:check` antes e depois da configuração para identificar os pré-requisitos faltantes. O comando só lê o ambiente e os endpoints do projeto, sem aplicar SQL ou ativar acesso. Não exibe segredos e não substitui os testes com sessões reais abaixo. Para configurar o projeto por uma integração conectada, confirmar primeiro o projeto de destino; a ausência de chaves no arquivo local não comprova ausência de um projeto na conta.
+
 ## Preparar o Supabase
 
 1. Criar um projeto dedicado e guardar a senha do banco fora do repositório. Confirmar região/plano com o mantenedor.
