@@ -27,7 +27,7 @@ Instruções diretas do mantenedor têm precedência. `docs/SPEC.md` é a especi
 
 - PT-BR; identidade Ascensão, tema claro padrão e opção escura. Implementar estados vazio, carregando e erro; foco visível, teclado e contraste AA.
 - Antes de cada commit, quando os scripts existirem: `pnpm lint && pnpm typecheck && pnpm test`. Executar os fluxos Playwright relevantes quando forem implementados.
-- Nesta etapa documental ainda não há `package.json`; não alegar que os checks da aplicação passaram. Validar links locais, consistência do planejamento e integridade da cópia do SPEC.
+- Usar os scripts de `package.json` e registrar resultados reais. Para e2e, gerar o build de produção antes de `pnpm test:e2e`; os testes cobrem desktop e celular. Em mudanças documentais, validar também links locais e a integridade da cópia do SPEC.
 - Não marcar aceites de infraestrutura como concluídos sem evidência no serviço real. Credenciais e bootstrap do owner são dependências externas explícitas.
 
 ## Git e decisões

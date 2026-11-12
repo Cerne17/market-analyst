@@ -26,37 +26,37 @@ Etapas completas de economia da unidade e PMF, pesquisa com fontes, métricas e 
 
 ## Sequência publicada
 
-| ID | Entrega | Tipo | Bloqueada por |
-| --- | --- | --- | --- |
-| [F0-01 · #1](https://github.com/Cerne17/market-analyst/issues/1) | Abrir a aplicação com layout Ascensão e checks automatizados | AFK | Nenhuma |
-| [F0-02 · #2](https://github.com/Cerne17/market-analyst/issues/2) | Entrar por convite com magic link e GitHub | HITL | F0-01 |
-| [F0-03 · #3](https://github.com/Cerne17/market-analyst/issues/3) | Navegar pelos workspaces com acesso por papel | AFK | F0-02 |
-| [F0-04 · #4](https://github.com/Cerne17/market-analyst/issues/4) | Publicar e validar a fundação no domínio do Sonda | HITL | F0-03 |
-| [F1-01 · #5](https://github.com/Cerne17/market-analyst/issues/5) | Criar um Sprint e calcular o custo da dor com autosave | AFK | F0-04 |
-| [F1-02 · #6](https://github.com/Cerne17/market-analyst/issues/6) | Definir o cliente com ICP verificável e personas | AFK | F1-01 |
-| [F1-03 · #7](https://github.com/Cerne17/market-analyst/issues/7) | Dimensionar TAM/SAM/SOM com cenários e prazo | AFK | F1-02 |
-| [F1-04 · #8](https://github.com/Cerne17/market-analyst/issues/8) | Calcular o Valor do Problema no desafio corporativo | AFK | F1-03 |
-| [F1-05 · #9](https://github.com/Cerne17/market-analyst/issues/9) | Comparar alternativas e formular posicionamento | AFK | F1-02 |
-| [F1-06 · #10](https://github.com/Cerne17/market-analyst/issues/10) | Definir planos e comparar âncoras de preço | AFK | F1-03, F1-04 |
-| [F1-07 · #11](https://github.com/Cerne17/market-analyst/issues/11) | Registrar entrevistas e compromissos com roteiro guiado | AFK | F1-02 |
-| [F1-08 · #12](https://github.com/Cerne17/market-analyst/issues/12) | Restaurar versões e avisar sobre edições concorrentes | AFK | F1-05, F1-06, F1-07 |
-| [F1-09 · #13](https://github.com/Cerne17/market-analyst/issues/13) | Gerar e importar contagens reais da Receita por CNAE | HITL | F1-01 |
-| [F1-10 · #14](https://github.com/Cerne17/market-analyst/issues/14) | Buscar estabelecimentos por CNAE e usar a contagem no mercado | AFK | F1-03, F1-09 |
-| [F1-11 · #15](https://github.com/Cerne17/market-analyst/issues/15) | Exibir prontidão e validar os dois fluxos Sprint sem IA | AFK | F1-08, F1-10 |
-| [F2-01 · #16](https://github.com/Cerne17/market-analyst/issues/16) | Conversar com o copiloto contextual por streaming | HITL | F1-11 |
-| [F2-02 · #17](https://github.com/Cerne17/market-analyst/issues/17) | Criticar a etapa e apontar lacunas acionáveis | AFK | F2-01 |
-| [F2-03 · #18](https://github.com/Cerne17/market-analyst/issues/18) | Revisar e aceitar sugestões de rascunho por campo | AFK | F2-01 |
-| [F2-04 · #19](https://github.com/Cerne17/market-analyst/issues/19) | Exibir hipóteses de unidade e compromissos no Sprint | AFK | F1-11 |
-| [F2-05 · #20](https://github.com/Cerne17/market-analyst/issues/20) | Apresentar seis slides e exportar PDF sem quebras | AFK | F2-04 |
-| [F2-06 · #21](https://github.com/Cerne17/market-analyst/issues/21) | Exportar relatório Markdown com premissas e fontes | AFK | F2-04 |
-| [F2-07 · #22](https://github.com/Cerne17/market-analyst/issues/22) | Compartilhar relatório e slides por link revogável | AFK | F2-05, F2-06 |
-| [F2-08 · #23](https://github.com/Cerne17/market-analyst/issues/23) | Validar o MVP em ensaio completo e testes e2e | HITL | F2-02, F2-03, F2-07 |
-| [F3-01 · #24](https://github.com/Cerne17/market-analyst/issues/24) | Comparar cenários completos de economia da unidade no Venture | AFK | F2-08 |
-| [F3-02 · #25](https://github.com/Cerne17/market-analyst/issues/25) | Medir PMF por segmento com o teste dos 40% | AFK | F2-08 |
-| [F3-03 · #26](https://github.com/Cerne17/market-analyst/issues/26) | Pesquisar concorrentes e selecionar alternativas com fontes | AFK | F2-08 |
-| [F3-04 · #27](https://github.com/Cerne17/market-analyst/issues/27) | Pesquisar uma premissa e aceitar valor com proveniência | AFK | F3-03 |
-| [F3-05 · #28](https://github.com/Cerne17/market-analyst/issues/28) | Acompanhar movimentos de MRR e aquisição mensal | AFK | F3-01 |
-| [F3-06 · #29](https://github.com/Cerne17/market-analyst/issues/29) | Imprimir relatório Venture em PDF legível | AFK | F3-02, F3-04, F3-05 |
+| ID                                                                 | Entrega                                                       | Tipo | Bloqueada por       |
+| ------------------------------------------------------------------ | ------------------------------------------------------------- | ---- | ------------------- |
+| [F0-01 · #1](https://github.com/Cerne17/market-analyst/issues/1)   | Abrir a aplicação com layout Ascensão e checks automatizados  | AFK  | Nenhuma             |
+| [F0-02 · #2](https://github.com/Cerne17/market-analyst/issues/2)   | Entrar por convite com magic link e GitHub                    | HITL | F0-01               |
+| [F0-03 · #3](https://github.com/Cerne17/market-analyst/issues/3)   | Navegar pelos workspaces com acesso por papel                 | AFK  | F0-02               |
+| [F0-04 · #4](https://github.com/Cerne17/market-analyst/issues/4)   | Publicar e validar a fundação no domínio do Sonda             | HITL | F0-03               |
+| [F1-01 · #5](https://github.com/Cerne17/market-analyst/issues/5)   | Criar um Sprint e calcular o custo da dor com autosave        | AFK  | F0-04               |
+| [F1-02 · #6](https://github.com/Cerne17/market-analyst/issues/6)   | Definir o cliente com ICP verificável e personas              | AFK  | F1-01               |
+| [F1-03 · #7](https://github.com/Cerne17/market-analyst/issues/7)   | Dimensionar TAM/SAM/SOM com cenários e prazo                  | AFK  | F1-02               |
+| [F1-04 · #8](https://github.com/Cerne17/market-analyst/issues/8)   | Calcular o Valor do Problema no desafio corporativo           | AFK  | F1-03               |
+| [F1-05 · #9](https://github.com/Cerne17/market-analyst/issues/9)   | Comparar alternativas e formular posicionamento               | AFK  | F1-02               |
+| [F1-06 · #10](https://github.com/Cerne17/market-analyst/issues/10) | Definir planos e comparar âncoras de preço                    | AFK  | F1-03, F1-04        |
+| [F1-07 · #11](https://github.com/Cerne17/market-analyst/issues/11) | Registrar entrevistas e compromissos com roteiro guiado       | AFK  | F1-02               |
+| [F1-08 · #12](https://github.com/Cerne17/market-analyst/issues/12) | Restaurar versões e avisar sobre edições concorrentes         | AFK  | F1-05, F1-06, F1-07 |
+| [F1-09 · #13](https://github.com/Cerne17/market-analyst/issues/13) | Gerar e importar contagens reais da Receita por CNAE          | HITL | F1-01               |
+| [F1-10 · #14](https://github.com/Cerne17/market-analyst/issues/14) | Buscar estabelecimentos por CNAE e usar a contagem no mercado | AFK  | F1-03, F1-09        |
+| [F1-11 · #15](https://github.com/Cerne17/market-analyst/issues/15) | Exibir prontidão e validar os dois fluxos Sprint sem IA       | AFK  | F1-08, F1-10        |
+| [F2-01 · #16](https://github.com/Cerne17/market-analyst/issues/16) | Conversar com o copiloto contextual por streaming             | HITL | F1-11               |
+| [F2-02 · #17](https://github.com/Cerne17/market-analyst/issues/17) | Criticar a etapa e apontar lacunas acionáveis                 | AFK  | F2-01               |
+| [F2-03 · #18](https://github.com/Cerne17/market-analyst/issues/18) | Revisar e aceitar sugestões de rascunho por campo             | AFK  | F2-01               |
+| [F2-04 · #19](https://github.com/Cerne17/market-analyst/issues/19) | Exibir hipóteses de unidade e compromissos no Sprint          | AFK  | F1-11               |
+| [F2-05 · #20](https://github.com/Cerne17/market-analyst/issues/20) | Apresentar seis slides e exportar PDF sem quebras             | AFK  | F2-04               |
+| [F2-06 · #21](https://github.com/Cerne17/market-analyst/issues/21) | Exportar relatório Markdown com premissas e fontes            | AFK  | F2-04               |
+| [F2-07 · #22](https://github.com/Cerne17/market-analyst/issues/22) | Compartilhar relatório e slides por link revogável            | AFK  | F2-05, F2-06        |
+| [F2-08 · #23](https://github.com/Cerne17/market-analyst/issues/23) | Validar o MVP em ensaio completo e testes e2e                 | HITL | F2-02, F2-03, F2-07 |
+| [F3-01 · #24](https://github.com/Cerne17/market-analyst/issues/24) | Comparar cenários completos de economia da unidade no Venture | AFK  | F2-08               |
+| [F3-02 · #25](https://github.com/Cerne17/market-analyst/issues/25) | Medir PMF por segmento com o teste dos 40%                    | AFK  | F2-08               |
+| [F3-03 · #26](https://github.com/Cerne17/market-analyst/issues/26) | Pesquisar concorrentes e selecionar alternativas com fontes   | AFK  | F2-08               |
+| [F3-04 · #27](https://github.com/Cerne17/market-analyst/issues/27) | Pesquisar uma premissa e aceitar valor com proveniência       | AFK  | F3-03               |
+| [F3-05 · #28](https://github.com/Cerne17/market-analyst/issues/28) | Acompanhar movimentos de MRR e aquisição mensal               | AFK  | F3-01               |
+| [F3-06 · #29](https://github.com/Cerne17/market-analyst/issues/29) | Imprimir relatório Venture em PDF legível                     | AFK  | F3-02, F3-04, F3-05 |
 
 ## Convenções de publicação
 
@@ -68,6 +68,7 @@ Etapas completas de economia da unidade e PMF, pesquisa com fontes, métricas e 
 - Não atribuir responsáveis ou datas sem definição do mantenedor.
 
 <a id="f0-01"></a>
+
 ## F0-01 — Abrir a aplicação com layout Ascensão e checks automatizados
 
 Issue publicada: [#1](https://github.com/Cerne17/market-analyst/issues/1).
@@ -92,6 +93,7 @@ Entregar uma aplicação Next.js navegável com trilha das sete etapas, temas e 
 Nenhuma — pode começar imediatamente.
 
 <a id="f0-02"></a>
+
 ## F0-02 — Entrar por convite com magic link e GitHub
 
 Issue publicada: [#2](https://github.com/Cerne17/market-analyst/issues/2).
@@ -117,6 +119,7 @@ Permitir acesso apenas a convidados, com bootstrap explícito do owner e schema/
 [#1](https://github.com/Cerne17/market-analyst/issues/1)
 
 <a id="f0-03"></a>
+
 ## F0-03 — Navegar pelos workspaces com acesso por papel
 
 Issue publicada: [#3](https://github.com/Cerne17/market-analyst/issues/3).
@@ -141,6 +144,7 @@ Mostrar apenas workspaces e projetos permitidos e aplicar papéis owner/editor/v
 [#2](https://github.com/Cerne17/market-analyst/issues/2)
 
 <a id="f0-04"></a>
+
 ## F0-04 — Publicar e validar a fundação no domínio do Sonda
 
 Issue publicada: [#4](https://github.com/Cerne17/market-analyst/issues/4).
@@ -165,6 +169,7 @@ Disponibilizar a fundação em Vercel com autenticação funcional no domínio c
 [#3](https://github.com/Cerne17/market-analyst/issues/3)
 
 <a id="f1-01"></a>
+
 ## F1-01 — Criar um Sprint e calcular o custo da dor com autosave
 
 Issue publicada: [#5](https://github.com/Cerne17/market-analyst/issues/5).
@@ -189,6 +194,7 @@ Criar projeto em workspace e preencher Dor/JTBD com cálculo explicado e persist
 [#4](https://github.com/Cerne17/market-analyst/issues/4)
 
 <a id="f1-02"></a>
+
 ## F1-02 — Definir o cliente com ICP verificável e personas
 
 Issue publicada: [#6](https://github.com/Cerne17/market-analyst/issues/6).
@@ -213,6 +219,7 @@ Registrar critérios do ICP, personas e papéis de usuário/comprador/veto no pr
 [#5](https://github.com/Cerne17/market-analyst/issues/5)
 
 <a id="f1-03"></a>
+
 ## F1-03 — Dimensionar TAM/SAM/SOM com cenários e prazo
 
 Issue publicada: [#7](https://github.com/Cerne17/market-analyst/issues/7).
@@ -238,6 +245,7 @@ Estimar mercado bottom-up com premissas rastreáveis, filtros SAM e SOM por part
 [#6](https://github.com/Cerne17/market-analyst/issues/6)
 
 <a id="f1-04"></a>
+
 ## F1-04 — Calcular o Valor do Problema no desafio corporativo
 
 Issue publicada: [#8](https://github.com/Cerne17/market-analyst/issues/8).
@@ -262,6 +270,7 @@ Adaptar etapa 3 ao desafio corporativo com economia anual e dimensionamento de m
 [#7](https://github.com/Cerne17/market-analyst/issues/7)
 
 <a id="f1-05"></a>
+
 ## F1-05 — Comparar alternativas e formular posicionamento
 
 Issue publicada: [#9](https://github.com/Cerne17/market-analyst/issues/9).
@@ -286,6 +295,7 @@ Construir matriz, mapa 2×2 e frase de posicionamento usando as alternativas rea
 [#6](https://github.com/Cerne17/market-analyst/issues/6)
 
 <a id="f1-06"></a>
+
 ## F1-06 — Definir planos e comparar âncoras de preço
 
 Issue publicada: [#10](https://github.com/Cerne17/market-analyst/issues/10).
@@ -310,6 +320,7 @@ Registrar planos, custo para servir e âncoras de custo, concorrência e valor, 
 [#7](https://github.com/Cerne17/market-analyst/issues/7), [#8](https://github.com/Cerne17/market-analyst/issues/8)
 
 <a id="f1-07"></a>
+
 ## F1-07 — Registrar entrevistas e compromissos com roteiro guiado
 
 Issue publicada: [#11](https://github.com/Cerne17/market-analyst/issues/11).
@@ -335,6 +346,7 @@ Manter diário privado por projeto com evidências, roteiro de 15 minutos e dete
 [#6](https://github.com/Cerne17/market-analyst/issues/6)
 
 <a id="f1-08"></a>
+
 ## F1-08 — Restaurar versões e avisar sobre edições concorrentes
 
 Issue publicada: [#12](https://github.com/Cerne17/market-analyst/issues/12).
@@ -360,6 +372,7 @@ Proteger edição assíncrona com histórico restaurável, atualização por cam
 [#9](https://github.com/Cerne17/market-analyst/issues/9), [#10](https://github.com/Cerne17/market-analyst/issues/10), [#11](https://github.com/Cerne17/market-analyst/issues/11)
 
 <a id="f1-09"></a>
+
 ## F1-09 — Gerar e importar contagens reais da Receita por CNAE
 
 Issue publicada: [#13](https://github.com/Cerne17/market-analyst/issues/13).
@@ -385,6 +398,7 @@ Executar pipeline local DuckDB desde arquivos reais do CNPJ até contagens consu
 [#5](https://github.com/Cerne17/market-analyst/issues/5)
 
 <a id="f1-10"></a>
+
 ## F1-10 — Buscar estabelecimentos por CNAE e usar a contagem no mercado
 
 Issue publicada: [#14](https://github.com/Cerne17/market-analyst/issues/14).
@@ -409,6 +423,7 @@ Encontrar contagens reais de estabelecimentos e inseri-las no TAM ou SAM com pro
 [#7](https://github.com/Cerne17/market-analyst/issues/7), [#13](https://github.com/Cerne17/market-analyst/issues/13)
 
 <a id="f1-11"></a>
+
 ## F1-11 — Exibir prontidão e validar os dois fluxos Sprint sem IA
 
 Issue publicada: [#15](https://github.com/Cerne17/market-analyst/issues/15).
@@ -434,6 +449,7 @@ Exibir score determinístico e lacunas navegáveis, fechando o aceite do núcleo
 [#12](https://github.com/Cerne17/market-analyst/issues/12), [#14](https://github.com/Cerne17/market-analyst/issues/14)
 
 <a id="f2-01"></a>
+
 ## F2-01 — Conversar com o copiloto contextual por streaming
 
 Issue publicada: [#16](https://github.com/Cerne17/market-analyst/issues/16).
@@ -459,6 +475,7 @@ Oferecer chat contextual em PT-BR com provider Anthropic, autorização, limites
 [#15](https://github.com/Cerne17/market-analyst/issues/15)
 
 <a id="f2-02"></a>
+
 ## F2-02 — Criticar a etapa e apontar lacunas acionáveis
 
 Issue publicada: [#17](https://github.com/Cerne17/market-analyst/issues/17).
@@ -483,6 +500,7 @@ Produzir críticas estruturadas ligadas a campos da etapa, com severidade, motiv
 [#16](https://github.com/Cerne17/market-analyst/issues/16)
 
 <a id="f2-03"></a>
+
 ## F2-03 — Revisar e aceitar sugestões de rascunho por campo
 
 Issue publicada: [#18](https://github.com/Cerne17/market-analyst/issues/18).
@@ -508,6 +526,7 @@ Propor preenchimento de campos vazios com justificativa e aceite ou descarte ind
 [#16](https://github.com/Cerne17/market-analyst/issues/16)
 
 <a id="f2-04"></a>
+
 ## F2-04 — Exibir hipóteses de unidade e compromissos no Sprint
 
 Issue publicada: [#19](https://github.com/Cerne17/market-analyst/issues/19).
@@ -532,6 +551,7 @@ Completar as etapas reduzidas do Sprint com economia da unidade explícita como 
 [#15](https://github.com/Cerne17/market-analyst/issues/15)
 
 <a id="f2-05"></a>
+
 ## F2-05 — Apresentar seis slides e exportar PDF sem quebras
 
 Issue publicada: [#20](https://github.com/Cerne17/market-analyst/issues/20).
@@ -557,6 +577,7 @@ Gerar slides de mercado em identidade Ascensão diretamente do projeto persistid
 [#19](https://github.com/Cerne17/market-analyst/issues/19)
 
 <a id="f2-06"></a>
+
 ## F2-06 — Exportar relatório Markdown com premissas e fontes
 
 Issue publicada: [#21](https://github.com/Cerne17/market-analyst/issues/21).
@@ -581,6 +602,7 @@ Gerar relatório legível em Markdown com as sete etapas, cálculos, cenários, 
 [#19](https://github.com/Cerne17/market-analyst/issues/19)
 
 <a id="f2-07"></a>
+
 ## F2-07 — Compartilhar relatório e slides por link revogável
 
 Issue publicada: [#22](https://github.com/Cerne17/market-analyst/issues/22).
@@ -605,6 +627,7 @@ Criar e revogar link público somente leitura sem expor dados privados do projet
 [#20](https://github.com/Cerne17/market-analyst/issues/20), [#21](https://github.com/Cerne17/market-analyst/issues/21)
 
 <a id="f2-08"></a>
+
 ## F2-08 — Validar o MVP em ensaio completo e testes e2e
 
 Issue publicada: [#23](https://github.com/Cerne17/market-analyst/issues/23).
@@ -629,6 +652,7 @@ Comprovar o caminho de login até slides e ensaiar análise Sprint com o time em
 [#17](https://github.com/Cerne17/market-analyst/issues/17), [#18](https://github.com/Cerne17/market-analyst/issues/18), [#22](https://github.com/Cerne17/market-analyst/issues/22)
 
 <a id="f3-01"></a>
+
 ## F3-01 — Comparar cenários completos de economia da unidade no Venture
 
 Issue publicada: [#24](https://github.com/Cerne17/market-analyst/issues/24).
@@ -653,6 +677,7 @@ Expandir economia da unidade para cenários nomeados comparáveis e benchmarks c
 [#23](https://github.com/Cerne17/market-analyst/issues/23)
 
 <a id="f3-02"></a>
+
 ## F3-02 — Medir PMF por segmento com o teste dos 40%
 
 Issue publicada: [#25](https://github.com/Cerne17/market-analyst/issues/25).
@@ -677,6 +702,7 @@ Registrar respostas por segmento e refletir o teste dos 40% na etapa de tração
 [#23](https://github.com/Cerne17/market-analyst/issues/23)
 
 <a id="f3-03"></a>
+
 ## F3-03 — Pesquisar concorrentes e selecionar alternativas com fontes
 
 Issue publicada: [#26](https://github.com/Cerne17/market-analyst/issues/26).
@@ -701,6 +727,7 @@ Pesquisar alternativas na web e permitir inclusão seletiva na matriz do projeto
 [#23](https://github.com/Cerne17/market-analyst/issues/23)
 
 <a id="f3-04"></a>
+
 ## F3-04 — Pesquisar uma premissa e aceitar valor com proveniência
 
 Issue publicada: [#27](https://github.com/Cerne17/market-analyst/issues/27).
@@ -725,6 +752,7 @@ Pesquisar fontes para uma premissa numérica e revisar valor, unidade, URL e dat
 [#26](https://github.com/Cerne17/market-analyst/issues/26)
 
 <a id="f3-05"></a>
+
 ## F3-05 — Acompanhar movimentos de MRR e aquisição mensal
 
 Issue publicada: [#28](https://github.com/Cerne17/market-analyst/issues/28).
@@ -750,6 +778,7 @@ Registrar métricas Venture e visualizar MRR, churn e aquisição por canal com 
 [#24](https://github.com/Cerne17/market-analyst/issues/24)
 
 <a id="f3-06"></a>
+
 ## F3-06 — Imprimir relatório Venture em PDF legível
 
 Issue publicada: [#29](https://github.com/Cerne17/market-analyst/issues/29).
