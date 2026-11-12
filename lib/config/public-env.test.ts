@@ -39,4 +39,19 @@ describe("configuração pública do Supabase", () => {
       }),
     ).toEqual({ url: "https://example.supabase.co", anonKey: "chave-publica" });
   });
+
+  it("recusa credenciais e caminhos na origem do serviço", () => {
+    for (const url of [
+      "https://user:pass@example.test",
+      "https://example.test/path",
+      "https://example.test?token=segredo",
+      "https://example.test/#hash",
+    ])
+      expect(
+        readPublicSupabaseConfig({
+          NEXT_PUBLIC_SUPABASE_URL: url,
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: "chave-publica",
+        }),
+      ).toBeNull();
+  });
 });

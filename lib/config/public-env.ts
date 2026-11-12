@@ -4,6 +4,14 @@ const publicSupabaseSchema = z.object({
   url: z.url().pipe(
     z.string().refine((value) => {
       const url = new URL(value);
+      if (
+        url.username ||
+        url.password ||
+        url.pathname !== "/" ||
+        url.search ||
+        url.hash
+      )
+        return false;
       return (
         url.protocol === "https:" ||
         (url.protocol === "http:" &&

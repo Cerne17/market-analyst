@@ -83,7 +83,7 @@ test("tema claro é padrão e a escolha escura persiste após recarregar", async
 
 test("acesso indisponível é explícito e caminhos inválidos têm retorno", async ({
   page,
-}) => {
+}, testInfo) => {
   await page.goto("/login");
   await expect(
     page.getByRole("heading", { name: "Acesso por convite." }),
@@ -91,6 +91,22 @@ test("acesso indisponível é explícito e caminhos inválidos têm retorno", as
   await expect(page.getByRole("status")).toContainText(
     "A configuração do acesso ainda não foi concluída",
   );
+  await expect(page.getByLabel("E-mail do convite")).toBeDisabled();
+  await expect(
+    page.getByRole("button", { name: "Receber link de acesso" }),
+  ).toBeDisabled();
+  await expect(
+    page.getByRole("button", { name: "Continuar com GitHub" }),
+  ).toBeDisabled();
+  await page.screenshot({
+    path: testInfo.outputPath("login-pendente.png"),
+    fullPage: true,
+  });
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= window.innerWidth,
+    ),
+  ).toBe(true);
   await page.goto("/trilha/99");
   await expect(
     page.getByRole("heading", { name: "Esta página ficou fora da trilha." }),
@@ -99,4 +115,30 @@ test("acesso indisponível é explícito e caminhos inválidos têm retorno", as
     .getByRole("link", { name: "Voltar ao início", exact: true })
     .click();
   await expect(page).toHaveURL("/");
+});
+
+test("rotas privadas e callbacks permanecem fechados sem configuração", async ({
+  page,
+  request,
+}) => {
+  for (const path of [
+    "/workspaces",
+    "/w/do-fundo-do-poco",
+    "/w/meus-projetos",
+  ]) {
+    await page.goto(path);
+    await expect(page).toHaveURL("/login");
+    await expect(
+      page.getByRole("heading", { name: "Acesso por convite." }),
+    ).toBeVisible();
+  }
+  for (const path of [
+    "/auth/callback?code=invalido&next=https://evil.test",
+    "/auth/confirm?token_hash=invalido&type=email",
+  ]) {
+    const response = await request.get(path, { maxRedirects: 0 });
+    expect(response.status()).toBe(503);
+    expect(response.headers()["location"]).toBeUndefined();
+    expect(response.headers()["cache-control"]).toContain("no-store");
+  }
 });

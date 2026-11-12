@@ -1098,3 +1098,232 @@ h1 {
     animation: none !important;
   }
 }
+
+.login-forms {
+  margin-top: 28px;
+}
+.form-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.form-stack label,
+.invite-form label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+}
+.form-stack input,
+.invite-form input,
+.invite-form select {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid var(--muted-foreground);
+  border-radius: 8px;
+  padding: 11px 13px;
+  background: var(--card);
+  color: var(--foreground);
+  font: inherit;
+}
+.form-stack input:disabled {
+  background: var(--muted);
+  cursor: not-allowed;
+}
+.form-stack input::placeholder,
+.invite-form input::placeholder {
+  color: var(--muted-foreground);
+}
+.form-divider {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 22px 0;
+  color: var(--muted-foreground);
+  font-size: 11px;
+}
+.form-divider span {
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+.login-forms > form > button {
+  width: 100%;
+}
+.login-forms .muted-caption {
+  font-size: 11px;
+  color: var(--muted-foreground);
+  line-height: 1.8;
+  margin-top: 20px;
+}
+.form-error,
+.form-message {
+  font-size: 12px;
+  line-height: 1.8;
+  margin-top: 12px;
+  overflow-wrap: anywhere;
+}
+.form-error {
+  color: var(--destructive);
+}
+.form-message {
+  color: var(--muted-foreground);
+}
+.workspace-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 20px;
+}
+.workspace-card {
+  display: block;
+  position: relative;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card);
+  padding: 30px;
+}
+.workspace-card:hover {
+  border-color: var(--muted-foreground);
+}
+.workspace-card > .role-chip {
+  position: absolute;
+  top: 28px;
+  right: 26px;
+}
+.workspace-card h2 {
+  margin-top: 28px;
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+.workspace-card p {
+  margin: 15px 0 22px;
+  color: var(--muted-foreground);
+  font-size: 13px;
+  line-height: 1.8;
+}
+.role-chip {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  background: var(--muted);
+  border-radius: 5px;
+  font-size: 11px;
+  padding: 5px 9px;
+}
+.workspace-heading {
+  margin-top: 25px;
+}
+.workspace-heading .eyebrow {
+  margin-bottom: 12px;
+}
+.workspace-heading .page-description {
+  margin-top: 12px;
+}
+.workspace-heading h1 {
+  overflow-wrap: anywhere;
+}
+.members-panel {
+  margin-top: 28px;
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card);
+}
+.members-panel > h2 {
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.invite-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 140px auto;
+  gap: 14px;
+  align-items: end;
+  margin: 24px 0 15px;
+}
+.invite-form label {
+  margin-bottom: 9px;
+}
+.invite-list {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0;
+}
+.invite-list li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-top: 1px solid var(--border);
+}
+.invite-list li > div {
+  min-width: 0;
+}
+.invite-list strong {
+  font-weight: 500;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+.invite-list li > div > span {
+  display: block;
+  color: var(--muted-foreground);
+  font-size: 11px;
+  margin-top: 5px;
+}
+.revoke-form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.revoke-form button {
+  height: 36px;
+  padding: 0 14px;
+  font-size: 11px;
+}
+.members-panel > .muted-caption {
+  color: var(--muted-foreground);
+  font-size: 11px;
+  line-height: 1.8;
+}
+.project-list {
+  list-style: none;
+  padding: 5px 24px;
+  margin: 0;
+}
+.project-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 13px;
+  padding: 22px 0;
+}
+.project-list strong {
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+.project-list .role-chip {
+  margin-left: auto;
+}
+@media (max-width: 700px) {
+  .workspace-cards {
+    grid-template-columns: 1fr;
+  }
+  .workspace-card {
+    padding: 24px;
+  }
+  .workspace-heading {
+    align-items: flex-start;
+  }
+  .members-panel {
+    padding: 22px;
+  }
+  .invite-form {
+    grid-template-columns: 1fr;
+  }
+  .workspace-heading .phase-tag {
+    flex-shrink: 0;
+  }
+}

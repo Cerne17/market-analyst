@@ -22,12 +22,14 @@ O SPEC original fica preservado em `docs/SPEC.md`. Este registro documenta decis
 - 2026-11-12 — A trilha e o estado vazio funcionam sem segredos; `/login` apenas informa acesso em preparação até a implementação e validação das issues #2/#3. Nenhum dado ou autenticação simulado é tratado como real.
 - 2026-11-12 — Mantenedor informou que Supabase/Vercel ainda não foram configurados. Sessão Vercel CLI foi verificada, mas nenhum projeto ou deploy foi criado nesta entrega; Docker local está instalado, com daemon indisponível.
 
+- 2026-11-12 — [ADR-0001](adr/0001-acesso-por-convite-e-isolamento.md) resolve convites por workspace, chaves naturais/compostas, bootstrap, privacidade do workspace pessoal e enforcement por RLS/RPC. O aceite hospedado segue pendente.
+- 2026-11-12 — Adicionar `@electric-sql/pglite` 0.5.16 apenas em desenvolvimento para testar SQL/grants/RLS no Postgres sem Docker; o contrato de Supabase Auth é fornecido pela suíte e não representa integração real com o provedor.
+- 2026-11-12 — Adicionar `server-only` 0.0.1 para proteger módulos de sessão. Login habilitado por `SONDA_AUTH_ENABLED`; owner local em `SONDA_OWNER_EMAIL`, sem versionar o valor.
+
 ## Pendências
 
 - Confirmar contas/projetos Supabase e Vercel, acesso a DNS/domínio e ambientes de preview/produção.
-- Confirmar e-mail do owner e convidados iniciais; definir bootstrap seguro e repetível, sem inferir identidade pelo primeiro login público.
-- Definir se um e-mail pode receber convites para múltiplos workspaces: o SPEC declara `email` como chave primária de invites, mas prevê associação por workspace; resolver antes da migration.
-- Documentar exceções do esquema a campos universais `id` e timestamps: o SPEC também lista chaves naturais e compostas; resolver antes da migration.
+- Owner confirmado e salvo apenas em `.env.local`; executar bootstrap no Supabase real e confirmar convidados iniciais.
 - Decidir campos, retenção e política de restauração dos snapshots sem restaurar segredos, tokens públicos ou registros de uso de IA.
 - Definir periodicidade e unidades comparáveis no critério de preço (< 20% do custo da dor/valor) antes de implementar o score.
 - Confirmar layout vigente dos dados CNPJ, volume agregado e competência real antes de importação.
@@ -40,6 +42,7 @@ Verificadas em 2026-11-12 no registry; lockfile registra as transitivas.
 
 | Pacote                        | Versão  |
 | ----------------------------- | ------- |
+| `@electric-sql/pglite`        | 0.5.16  |
 | `@fontsource/inter`           | 5.3.0   |
 | `@fontsource/montserrat`      | 5.3.0   |
 | `@playwright/test`            | 1.65.0  |
@@ -61,6 +64,7 @@ Verificadas em 2026-11-12 no registry; lockfile registra as transitivas.
 | `prettier-plugin-tailwindcss` | 0.8.1   |
 | `react`                       | 19.3.1  |
 | `react-dom`                   | 19.3.1  |
+| `server-only`                 | 0.0.1   |
 | `tailwind-merge`              | 3.7.0   |
 | `tailwindcss`                 | 4.3.5   |
 | `typescript`                  | 6.0.3   |
