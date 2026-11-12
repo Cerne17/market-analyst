@@ -46,6 +46,8 @@ pnpm test:e2e
 
 As suítes ainda não comprovam login, RLS, persistência, fórmulas ou deploy; esses critérios pertencem às próximas entregas.
 
+`next-env.d.ts` é gerado pelo Next.js e fica fora do Git: os imports variam entre os modos dev/build. O Next também mantém um bloco próprio no final de `AGENTS.md`, com referência à documentação da versão instalada.
+
 ## Variáveis de ambiente
 
 Usar `.env.example` como template. Nenhum segredo é necessário para os fluxos atuais. A detecção de configuração em `/login` valida apenas a presença/formato dos campos públicos e não comprova conexão com o Supabase.
