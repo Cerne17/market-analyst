@@ -1,0 +1,9 @@
+node_modules
+.pnpm-store
+.next
+pnpm-lock.yaml
+next-env.d.ts
+coverage
+playwright-report
+test-results
+docs/SPEC.md

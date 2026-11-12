@@ -1,7 +1,7 @@
 ---
 name: Entrega
 about: Propor um fluxo verificável de ponta a ponta
-title: ''
+title: ""
 labels: needs-triage
 ---
 

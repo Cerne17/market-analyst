@@ -1,5 +1,6 @@
 .DS_Store
 node_modules/
+.pnpm-store/
 .next/
 out/
 coverage/
@@ -10,5 +11,6 @@ test-results/
 .env.*
 !.env.example
 *.tsbuildinfo
+next-env.d.ts
 *.log
 .scratch/

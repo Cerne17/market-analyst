@@ -27,7 +27,7 @@ Instruções diretas do mantenedor têm precedência. `docs/SPEC.md` é a especi
 
 - PT-BR; identidade Ascensão, tema claro padrão e opção escura. Implementar estados vazio, carregando e erro; foco visível, teclado e contraste AA.
 - Antes de cada commit, quando os scripts existirem: `pnpm lint && pnpm typecheck && pnpm test`. Executar os fluxos Playwright relevantes quando forem implementados.
-- Nesta etapa documental ainda não há `package.json`; não alegar que os checks da aplicação passaram. Validar links locais, consistência do planejamento e integridade da cópia do SPEC.
+- Usar os scripts de `package.json` e registrar resultados reais. Para e2e, gerar o build de produção antes de `pnpm test:e2e`; os testes cobrem desktop e celular. Em mudanças documentais, validar também links locais e a integridade da cópia do SPEC.
 - Não marcar aceites de infraestrutura como concluídos sem evidência no serviço real. Credenciais e bootstrap do owner são dependências externas explícitas.
 
 ## Git e decisões
@@ -50,3 +50,13 @@ Papéis canônicos de triagem, prioridades e estados de bloqueio estão em `docs
 ### Domain docs
 
 Contexto único em `CONTEXT.md`, com decisões em `docs/decisions.md` e `docs/adr/`. Ver `docs/agents/domain.md`.
+
+<!-- BEGIN:nextjs-agent-rules -->
+
+## This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->

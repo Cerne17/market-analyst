@@ -2,13 +2,13 @@
 
 ## Papéis de triagem
 
-| Papel | Label exata | Significado |
-| --- | --- | --- |
-| Avaliação | `needs-triage` | Esclarecer escopo ou dependências antes de executar. |
-| Aguardando informação | `needs-info` | Falta uma resposta ou informação externa. |
+| Papel                         | Label exata       | Significado                                                          |
+| ----------------------------- | ----------------- | -------------------------------------------------------------------- |
+| Avaliação                     | `needs-triage`    | Esclarecer escopo ou dependências antes de executar.                 |
+| Aguardando informação         | `needs-info`      | Falta uma resposta ou informação externa.                            |
 | Pronta para execução autônoma | `ready-for-agent` | Sem bloqueadores e com critérios suficientes para execução autônoma. |
-| Pronta para execução humana | `ready-for-human` | Sem bloqueadores, mas requer interação humana. |
-| Não executar | `wontfix` | Decisão explícita de não realizar. |
+| Pronta para execução humana   | `ready-for-human` | Sem bloqueadores, mas requer interação humana.                       |
+| Não executar                  | `wontfix`         | Decisão explícita de não realizar.                                   |
 
 Manter um papel de triagem ativo por vez. Labels existentes do GitHub, como `bug`, `documentation` e `enhancement`, podem complementar o papel.
 

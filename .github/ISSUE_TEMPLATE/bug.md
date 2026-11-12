@@ -1,7 +1,7 @@
 ---
 name: Bug
 about: Relatar comportamento incorreto com evidência
-title: ''
+title: ""
 labels: bug, needs-triage
 ---
 
