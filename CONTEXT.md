@@ -33,4 +33,6 @@ O copiloto sugere e critica; o usuário decide e aceita cada alteração. Toda p
 
 Fundação local implementada: aplicação Next.js com identidade Ascensão, temas e apresentação navegável das sete etapas. A trilha pública é informativa e não representa projetos ou dados persistidos.
 
-Supabase ainda não foi criado; o e-mail do owner e a configuração OAuth permanecem pendentes. A CLI Vercel possui sessão válida, mas nenhum deploy deste projeto foi feito. Banco, login e isolamento de workspaces ainda precisam ser implementados e validados nas issues #2–#4.
+Código de login por convite (magic link/GitHub), callbacks, seleção de workspaces e gestão de convites implementado. Migrations cobrem as 18 tabelas com RLS e testes em Postgres embarcado. Sem credenciais, o login permanece desabilitado e rotas privadas redirecionam para `/login`.
+
+O e-mail do owner foi confirmado e fica apenas no ambiente local. Supabase ainda não foi provisionado: aplicar migrations/seed, executar bootstrap e configurar hook/template/OAuth para validar os fluxos hospedados. A CLI Vercel possui sessão válida; nenhum deploy foi realizado. As issues #2–#4 seguem abertas até seus aceites reais.

@@ -118,8 +118,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
               <LockKeyhole size={13} aria-hidden="true" /> Espaço privado
             </span>
             <ThemeToggle />
-            <Link href="/login" className="login-link">
-              Entrar <ArrowUpRight size={15} aria-hidden="true" />
+            <Link href="/workspaces" className="login-link">
+              Meu espaço <ArrowUpRight size={15} aria-hidden="true" />
             </Link>
           </div>
         </header>

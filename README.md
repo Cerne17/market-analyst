@@ -2,9 +2,9 @@
 
 Ferramenta privada de análise de mercado guiada para hackathons (Sprint) e projetos para vender (Venture). Interface e documentação em PT-BR.
 
-**Estado:** fundação local implementada: Next.js, layout Ascensão, trilha navegável, temas e pipeline de qualidade. Autenticação, banco e deploy ainda aguardam configuração e implementação.
+**Estado:** fundação local implementada: Next.js, layout Ascensão, trilha navegável, temas e pipeline de qualidade. Código de autenticação, workspaces e migrations implementado; integração hospedada e deploy aguardam configuração e validação.
 
-Entrega inicial: [#1 — Layout Ascensão e checks automatizados](https://github.com/Cerne17/market-analyst/issues/1). As demais entregas da milestone 0 continuam pendentes.
+Entrega inicial: [#1 — Layout Ascensão e checks automatizados](https://github.com/Cerne17/market-analyst/issues/1). As issues #2/#3 têm implementação preparada, mas seus aceites em ambiente real e o deploy (#4) continuam pendentes.
 
 ## Documentação
 
@@ -33,7 +33,7 @@ cp .env.example .env.local
 pnpm dev
 ```
 
-Abra [localhost:3000](http://localhost:3000). A página inicial e a apresentação das sete etapas funcionam sem credenciais. `/login` informa que o acesso ainda está em preparação; não há criação ou salvamento de projetos nesta entrega.
+Abra [localhost:3000](http://localhost:3000). A página inicial e a apresentação das sete etapas funcionam sem credenciais. `/login` mostra formulários desabilitados até concluir a configuração dos serviços. Depois, convidados acessam `/workspaces` e `/w/[workspace]`. Ainda não há criação ou edição de projetos pela UI nesta fase.
 
 ```bash
 pnpm lint
@@ -45,3 +45,5 @@ pnpm test:e2e
 ```
 
 Os testes de navegador usam o build de produção, que deve existir antes da execução. O workflow de CI executa essa sequência. Chaves reais ficam em `.env.local` ou no serviço de hospedagem, nunca no Git.
+
+Para conferir a configuração externa, execute `pnpm setup:check`. O comando faz somente leituras, não exibe chaves e aponta provedores, seed e bootstrap pendentes. Ele não substitui a validação real de login, hook e permissões descrita no [guia de serviços](docs/setup-services.md).
